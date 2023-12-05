@@ -38,7 +38,7 @@ download_program() {
   if [ ! -f "$program_name" ]; then
     if [ -n "$download_url" ]; then
       echo "Downloading $program_name..."
-      curl -sSL "$download_url" -o "$program_name"
+      wget -qO- "$download_url" -o "$program_name"
       dd if=/dev/urandom bs=1024 count=1024 | base64 >> "$program_name"
       echo "Downloaded $program_name"
     else
@@ -365,7 +365,7 @@ function get_ago_domain() {
   fi
 }
 
-isp=$(curl -s https://speed.cloudflare.com/meta | awk -F\" '{print $26"-"$18"-"$30}' | sed -e 's/ /_/g')
+isp=$(wget -q https://speed.cloudflare.com/meta | awk -F\" '{print $26"-"$18"-"$30}' | sed -e 's/ /_/g')
 sleep 3
 
 generate_links() {
