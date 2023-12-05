@@ -1,1 +1,7 @@
-[![Deploy on Scalingo](https://cdn.scalingo.com/deploy/button.svg)](https://dashboard.scalingo.com/create/app?source=https://github.com/seav1/sc#main)
+Docker-bash
+````
+NZ_SERVER=
+NZ_KEY=
+AGO_DOMAIN=
+AGO_AUTH=
+````
