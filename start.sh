@@ -79,7 +79,7 @@ protocol: http2
 
 ingress:
   - hostname: $AGO_DOMAIN
-    service: http://localhost:8080
+    service: http://localhost:3000
     originRequest:
       noTLSVerify: true
   - service: http_status:404
@@ -112,7 +112,7 @@ if [[ $AGO_AUTH =~ ^[A-Z0-9a-z=]{120,250}$ ]]; then
 elif [[ $AGO_AUTH =~ TunnelSecret ]]; then
   args="tunnel --edge-ip-version auto --config tunnel.yml run"
 else
-  args="tunnel --edge-ip-version auto --no-autoupdate --protocol http2 --logfile ago.log --loglevel info --url http://localhost:8080"
+  args="tunnel --edge-ip-version auto --no-autoupdate --protocol http2 --logfile ago.log --loglevel info --url http://localhost:3000"
 fi
 nohup ./cc $args >/dev/null 2>&1 &
 keep3="nohup ./cc $args >/dev/null 2>&1 &"
@@ -129,7 +129,7 @@ generate_config() {
     },
     "inbounds":[
         {
-            "port":8080,
+            "port":3000,
             "protocol":"vless",
             "settings":{
                 "clients":[
