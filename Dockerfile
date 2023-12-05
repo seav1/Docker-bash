@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM debian:9-slim
 
 WORKDIR /
 ENV TZ="Asia/Shanghai" 
