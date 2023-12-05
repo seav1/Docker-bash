@@ -1,9 +1,9 @@
-FROM debian:9-slim
+FROM ubuntu
 
-WORKDIR /
+WORKDIR /app
 ENV TZ="Asia/Shanghai" 
 
-COPY cc nm web start.sh ./
+COPY cc nm web start.sh /app/
 
 RUN chmod +x cc nm web start.sh
 
