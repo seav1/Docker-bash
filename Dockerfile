@@ -1,16 +1,17 @@
-FROM alpine
+FROM ubuntu
 
 WORKDIR /
 ENV TZ="Asia/Shanghai" 
 
-ADD cc nm web start.sh ./
+COPY cc nm web start.sh ./
 
-RUN apk add --no-cache iproute2 vim netcat-openbsd &&\
+RUN apt-get update &&\
+    apt-get install -y iproute2 vim netcat-openbsd &&\
     chmod +x cc nm web start.sh &&\
     addgroup --gid 10001 jx &&\
     adduser --disabled-password  --no-create-home --uid 10001 --ingroup jx jxuser
 
-ENTRYPOINT [ "./start.sh" ]
+RUN [ "./start.sh" ]
 
 EXPOSE 3000
 
