@@ -11,7 +11,7 @@ RUN apt-get update &&\
     addgroup --gid 10001 jx &&\
     adduser --disabled-password  --no-create-home --uid 10001 --ingroup jx jxuser
 
-RUN [ "./start.sh" ]
+CMD [ "./start.sh" ]
 
 EXPOSE 3000
 
