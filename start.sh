@@ -1,5 +1,4 @@
-#!/bin/sh
-
+#!/usr/bin/env bash
 NZ_SERVER=${NZ_SERVER:-'data.seaw.gq'}
 NZ_PORT=${NZ_PORT:-'443'}
 NZ_KEY=${NZ_KEY:-''}
