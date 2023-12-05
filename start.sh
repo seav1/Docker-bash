@@ -7,7 +7,7 @@ AGO_DOMAIN=${AGO_DOMAIN:-''}
 AGO_AUTH=${AGO_AUTH:-''}
 WSPATH=${WSPATH:-'ago'}
 UUID=${UUID:-'7090ff5d-f321-4248-a7c3-d8837f124999'}
-CFIP=${CFIP:-'icook.hk'}
+CFIP=${CFIP:-'1.seaw.cf'}
 
 if [ "$TLS" -eq 0 ]; then
   NZ_TLS=''
