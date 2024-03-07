@@ -10,4 +10,3 @@ RUN apt-get update && apt-get install -y wget curl unzip systemctl &&\
 CMD ["./start.sh"]
 
 EXPOSE 3000
-USER 10001
