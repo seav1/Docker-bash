@@ -8,7 +8,7 @@ COPY start.sh /app/
 RUN apt-get update &&\
     chmod +x start.sh
 
-ENTRYPOINT ["./start.sh"]
+CMD ["./start.sh"]
 
 USER 10008   
 EXPOSE 3000
