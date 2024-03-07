@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM debian:bullseye-slim
 
 WORKDIR /home/jfuuser
 ENV TZ="Asia/Shanghai" 
