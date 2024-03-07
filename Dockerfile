@@ -3,7 +3,7 @@ FROM alpine
 WORKDIR /home/jfuuser
 ENV TZ="Asia/Shanghai" 
 
-COPY start.sh /home/jfuuser
+COPY start.sh ./
 
 RUN apk update &&\
     apk add --no-cache zsh &&\
