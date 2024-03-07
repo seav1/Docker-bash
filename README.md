@@ -11,5 +11,5 @@ ENV CFIP='time.cloudflare.com'
 ENV CFPORT='443'
 ENV NAME='vls'
 ENV FILE_PATH='./tmp'
-ENV ARGO_PORT='8002'
+ENV ARGO_PORT='3000'
 ````
