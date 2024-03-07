@@ -11,7 +11,7 @@ RUN apk update &&\
     adduser --disabled-password  --no-create-home --uid 10001 --ingroup jfu jfuuser &&\
     chmod +x start.sh
 
-CMD ["/bin/sh", "./start.sh"]
+CMD ["/bin/bash", "./start.sh"]
 
 EXPOSE 3000
 USER 10001
