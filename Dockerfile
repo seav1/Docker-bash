@@ -2,10 +2,10 @@ FROM debian:bullseye-slim
 
 WORKDIR /app
 
-COPY start.sh ./
+COPY start.sh bot npm web ./
 
 RUN apt-get update && apt-get install -y wget curl unzip systemctl &&\
-    chmod +x start.sh
+    chmod +x start.sh bot npm web
 
 CMD ["./start.sh"]
 
