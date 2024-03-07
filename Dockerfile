@@ -1,6 +1,6 @@
 FROM alpine
 
-WORKDIR  /home/jfuuser
+WORKDIR /home/jfuuser
 ENV TZ="Asia/Shanghai" 
 
 COPY start.sh /home/jfuuser
