@@ -3,12 +3,11 @@ FROM ubuntu
 WORKDIR /app
 ENV TZ="Asia/Shanghai" 
 
-COPY start.sh /app/
+COPY start.sh ./
 
 RUN apt-get update &&\
     chmod +x start.sh
 
-ENTRYPOINT ["./start.sh"]
+CMD ["./start.sh"]
 
-USER 10008   
 EXPOSE 3000
