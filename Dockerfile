@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:latest
 
 WORKDIR /home/jfuuser
 ENV TZ="Asia/Shanghai" 
