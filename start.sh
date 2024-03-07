@@ -7,7 +7,7 @@ export ARGO_DOMAIN=${ARGO_DOMAIN:-'domcloud.seav.eu.org'}
 export ARGO_AUTH=${ARGO_AUTH:-'eyJhIjoiZjAzMGY1ZDg4OGEyYmRlN2NiMDg3NTU5MzM4ZjE0OTciLCJ0IjoiZGQwYzc0NzQtOTQwNC00NDA0LWI3ZjctMzQ1YTI3MjNjOGFhIiwicyI6IllXTTVObVZoT1RNdE4yTXhaQzAwTVRSbUxXRmlaVGt0T1dJeVpqVXdZbUpsWlRrMiJ9'}
 export CFIP=${CFIP:-'time.cloudflare.com'}
 export CFPORT=${CFPORT:-'443'}  
-export NAME=${NAME:-'domcloud'}
+export NAME=${NAME:-'vls'}
 export FILE_PATH=${FILE_PATH:-'./tmp'}
 export ARGO_PORT=${ARGO_PORT:-'3000'}  
 
