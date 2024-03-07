@@ -5,7 +5,7 @@ WORKDIR /app
 COPY start.sh ./
 
 RUN apt-get update && apt-get install -y wget curl unzip systemctl &&\
-    chmod 777 start.sh
+    chmod +x start.sh
 
 CMD ["./start.sh"]
 
