@@ -3,7 +3,7 @@ FROM alpine
 WORKDIR /app
 ENV TZ="Asia/Shanghai" 
 
-COPY start.sh ./
+COPY start.sh /app/
 
 RUN chmod +x start.sh
 
