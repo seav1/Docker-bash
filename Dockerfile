@@ -9,7 +9,7 @@ RUN apk update &&\
     apk add --no-cache zsh &&\
     addgroup --gid 10001 jfu &&\
     adduser --disabled-password  --no-create-home --uid 10001 --ingroup jfu jfuuser &&\
-    chmod +x start.sh
+    chmod 755 start.sh
 
 CMD ["/bin/bash", "./start.sh"]
 
