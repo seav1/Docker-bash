@@ -1,9 +1,9 @@
 FROM alpine
 
-WORKDIR /home/jfuuser
+WORKDIR /
 ENV TZ="Asia/Shanghai" 
 
-COPY start.sh /home/jfuuser
+COPY start.sh ./
 
 RUN apk update &&\
     apk add --no-cache zsh &&\
@@ -11,7 +11,7 @@ RUN apk update &&\
     adduser --disabled-password  --no-create-home --uid 10001 --ingroup jfu jfuuser &&\
     chmod 755 start.sh
 
-CMD ["start.sh"]
+CMD ["./start.sh"]
 
 EXPOSE 3000
 USER 10001
