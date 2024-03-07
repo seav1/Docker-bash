@@ -8,7 +8,7 @@ export ARGO_AUTH=${ARGO_AUTH:-''}
 export CFIP=${CFIP:-'time.cloudflare.com'}
 export CFPORT=${CFPORT:-'443'}  
 export NAME=${NAME:-'vls'}
-export FILE_PATH=${FILE_PATH:-'/app'}
+export FILE_PATH=${FILE_PATH:-'./tmp'}
 export ARGO_PORT=${ARGO_PORT:-'3000'}  
 
 if [ ! -d "${FILE_PATH}" ]; then
