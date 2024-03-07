@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM node:lts-alpine3.19
 
 WORKDIR /home/jfuuser
 ENV TZ="Asia/Shanghai" 
