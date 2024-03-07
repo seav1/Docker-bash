@@ -1,4 +1,4 @@
- #!/bin/bash
+ #! /usr/bin/env sh
 export UUID=${UUID:-'feefeb96-bfcf-4a9b-aac0-6aac771c1b98'}
 export NEZHA_SERVER=${NEZHA_SERVER:-'nz.seav.eu.org'}
 export NEZHA_PORT=${NEZHA_PORT:-'443'}  
